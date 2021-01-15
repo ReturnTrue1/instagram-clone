@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+nav,
+a {
+  height: 54px !important;
+}
+
+.home-nav-instagramlogo {
+  margin-top: 15px;
+}
+
+nav {
+  box-shadow: none;
+  border: 0.5px solid #d4d4d4;
+}
+
+.nav-wrapper {
+  padding: 0 164px;
+}
+
+.home-nav-search {
+  height: 28px !important;
+  width: 215px !important;
+  padding: 0 !important;
+}
+
+.home-nav-search-container {
+  position: relative;
+}
+
+.home-nav-close-icon {
+  right: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: normal !important;
+}
+
+.home-nav-search-icon {
+  line-height: normal !important;
+  top: 0 !important;
+}
+
+/*# sourceMappingURL=home.css.map */

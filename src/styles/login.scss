@@ -1,0 +1,158 @@
+@use "sass:map";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+$PrimaryColor: ("white": #FFFFFF, "black": #000000, "softgrey": rgb(245, 245, 245));
+$Button: ("login-enabled": #0095f6, "login-disabled": rgba(0, 149, 246, 0.3), "forgot-pass": rgb(0, 55, 107));
+$BorderWidth: ("one": 1px, "two": 2px, "three": 3px, "four": 4px, "five": 5px, "six": 6px, "seven": 7px, "eight": 8px, "nine": 9px);
+$BorderColor: ("1": rgb(219, 219, 219), "2": #000000, "3": rgb(185, 185, 185));
+
+.flex-2 {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.c-css-login-container, .c-css-signup-container {
+    height: auto;
+    width: 350px;
+    border: map-get($BorderWidth, "one") solid map-get($BorderColor, "1");
+    padding: 10px 0;
+    margin: 0 0 10px 0;
+}
+
+.c-css-logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.c-css-logo {
+    width: 175px;
+    margin: 22px auto 12px;
+}
+
+.c-css-form {
+    background-color: #8e8e8e;
+}
+
+.input-field {
+    input:focus {
+        border: 1px solid map-get($BorderColor,'3') !important;
+        box-shadow: none !important;
+        border-radius: 3px !important; 
+        padding: 5px 0 0 8px !important;
+    }
+    input {
+        border: 1px solid map-get($BorderColor, '1') !important;
+        box-shadow: none !important;
+        border-radius: 3px !important; 
+        font-size: 12px !important;
+        padding: 5px 0 0 8px !important;
+        background-color: map-get($PrimaryColor, 'softgrey') !important;
+    }
+    .active {
+        padding: 25px 0 0 11px !important;
+        font-size: 12px !important;
+        color: rgb(185, 185, 185) !important;
+    }
+    label {
+        padding: 3px 0 0 11px !important;
+        left: 0 !important;
+    }
+    
+    margin: 10px !important;
+}
+
+.c-css-form-container {
+    width: 288px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn.disabled {
+    background-color: map-get($Button, 'login-disabled') !important;
+    color: white !important;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.btn {
+    background-color: map-get($Button, 'login-enabled') !important;
+    color: white !important;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    width: 298px;
+}
+
+.c-css-mg {
+    margin-top: 20px;
+}
+
+.c-css-line {
+    border-top: 0.5px solid map-get($BorderColor, "3");
+    width: 107.5px;
+    height: 1px;
+    margin-top: 10px
+}
+
+.c-css-line-text {
+    margin: 0 18px;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(142, 142, 142);
+}
+
+.c-css-facebook-logo {
+    height: 16px;
+    width: 16px;
+    background-position: center;
+    background-image: url('../assets/facebook-logo1.png');
+    margin-right: 8px;
+}
+
+.c-css-facebook-text {
+    color: rgb(56, 81, 133);
+    font-weight: 500;
+    font-size: 14px;
+    height: 21px;
+}
+
+.c-css-facebook-container {
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.c-css-forgot-password {
+    font-size: 12px;
+    color: rgb(0, 55, 107);
+    margin-bottom: 5px;
+}
+
+.c-css-signup {
+    margin: 15px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.c-css-signup-link {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.c-css-signup-container {
+    padding: 0;
+}
